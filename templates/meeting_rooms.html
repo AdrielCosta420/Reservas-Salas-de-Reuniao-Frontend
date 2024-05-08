@@ -4,8 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meeting Rooms</title>
+    <link rel="stylesheet" href="../styles/meeting_room.css">
 </head>
 <body>
+
+
+
+    <div class="container" id="roomContainer">
+    </div>
+  
+    <div id="modal" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <label for="startTime">Data de Início:</label>
+          <input type="datetime-local" id="startTime" name="startTime">
+          <label for="endTime">Data de Fim:</label>
+          <input type="datetime-local" id="endTime" name="endTime">
+          <label for="reserverName">Nome do Reservante:</label>
+          <input type="text" id="reserverName" name="reserverName">
+          <button id="reserveButton">Reservar</button>
+          <button id="cancelButton">Cancelar Reserva</button>
+      </div>
+  </div>
+  
+   
     
+    <script src="../js/meeting_room.js"></script>
 </body>
 </html>
