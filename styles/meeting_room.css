@@ -2,50 +2,89 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #0c0c0c;
 }
 
+
+.main-header {
+    background-color: #181818;
+    padding: 20px;
+    text-align: start;
+}
+
+h1 {
+    margin: 0;
+}
+
+.first-sentence {
+    color: #fed731;
+    /* Cor para "Desperte a criatividade." */
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.second-sentence {
+    color: #e9ebff;
+    /* Cor para "Reserve uma sala perfeita para colaboração e resultados." */
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
 .container {
-    max-width: 1200px;
-    margin: 20px auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px auto;
     padding: 20px;
 }
 
 .room-container {
-    background-color: #28a745;
-    margin-bottom: 20px;
+    width: calc(35.35% - 80px);
+    margin-bottom: 45px;
     border-radius: 8px;
     overflow: hidden;
 }
 
 .room-header {
-    background-color: #007bff;
-    color: #fff;
+    color: #e9ebff;
+    /* Define a cor do texto para branco */
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: transparent;
 }
+
+
 
 .room-body {
     padding: 10px;
-    background-color: #f8f9fa;
+    background-color: whitesmoke;
 }
 
 .room-name {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .room-status {
-    font-weight: bold;
+    font-weight: 700;
+    font-size: 15px;
 }
 
 .room-description {
     margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.user {
+    color: red;
 }
 
 
 .btn-reserve {
-    background-color: #007bff;
+    background-color: #4e83bd;
     color: #fff;
     border: none;
     padding: 8px 12px;
@@ -58,16 +97,19 @@ body {
 }
 
 .ocupada {
-    background-color: #dc3545; /* Vermelho para salas ocupadas */
+    background-color: #dc3545;
+    /* Vermelho para salas ocupadas */
 }
 
 .disponivel {
-    background-color: #28a745; /* Verde para salas disponíveis */
+    background-color: #28a745;
+    /* Verde para salas disponíveis */
 }
 
 /* Estilo do modal */
 .modal {
-    display: none; /* Ocultar modal por padrão */
+    display: none;
+    /* Ocultar modal por padrão */
     position: fixed;
     z-index: 1;
     left: 0;
@@ -75,28 +117,49 @@ body {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.4);
-  }
-  
-  .modal-content {
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+.modal-content {
     background-color: #fefefe;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
-  }
-  
-  .close {
+    width: 300px;
+    border-radius: 5px;
+}
+
+.modal-content label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.modal-content input {
+    display: block;
+    margin-bottom: 20px;
+}
+.modal-content button {
+    display: block;
+    margin-bottom: 20px;
+    background-color: #4e83bd;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+
+.close:hover,
+.close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
-  }
-  
+}

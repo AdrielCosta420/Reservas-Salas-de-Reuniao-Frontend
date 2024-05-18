@@ -7,25 +7,29 @@
     <link rel="stylesheet" href="../styles/meeting_room.css">
 </head>
 <body>
-
-
-
+    
+   <header class="main-header">
+    <h1>
+        <span class="first-sentence">Desperte a criatividade.</span>
+        <br>
+        <span class="second-sentence">Reserve uma sala perfeita para colaboração e resultados.</span>
+    </h1>
+   </header>
+   <div class="user"></div>
     <div class="container" id="roomContainer">
     </div>
-  
     <div id="modal" class="modal">
-      <div class="modal-content">
-          <span class="close">&times;</span>
-          <label for="startTime">Data de Início:</label>
-          <input type="datetime-local" id="startTime" name="startTime">
-          <label for="endTime">Data de Fim:</label>
-          <input type="datetime-local" id="endTime" name="endTime">
-          <label for="reserverName">Nome do Reservante:</label>
-          <input type="text" id="reserverName" name="reserverName">
-          <button id="reserveButton">Reservar</button>
-          <button id="cancelButton">Cancelar Reserva</button>
-      </div>
-  </div>
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <label for="startTime">Data de Início:</label>
+            <input type="datetime-local" id="startTime" name="startTime">
+            <label for="endTime">Data de Fim:</label>
+            <input type="datetime-local" id="endTime" name="endTime">
+            <label for="reserverName">Nome da Reservante:</label>
+            <input type="text" id="reserverName" name="reserverName">
+            <button id="reserveButton">Reservar</button>
+        </div>
+    </div>
   
    
     

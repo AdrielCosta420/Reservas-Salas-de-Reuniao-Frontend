@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #181818;
     margin: 0;
     padding: 0;
     display: flex;
@@ -10,10 +10,10 @@ body {
 }
 
 .login-container {
-    background-color: #fff;
+    background-color: #fed731;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 10px 10px rgba(131, 18, 236, 0.952);
     width: 300px;
 }
 
@@ -32,18 +32,20 @@ input[type="submit"] {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: 8px;
     box-sizing: border-box;
+    background-color: #e9ebff;
 }
 
 input[type="submit"] {
-    background-color: #007bff;
+    background-color: #510af7;
     color: #fff;
     cursor: pointer;
+    border-radius: 8px;
 }
 
 input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #272ac4;
 }
 
 
